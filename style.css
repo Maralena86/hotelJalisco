@@ -1,0 +1,334 @@
+
+/*----------------Framework----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root
+{
+    --primary-color: #869340;
+    ;
+    --second-color: #389db6; 
+	--third-color:#AD6300;
+    --fourth-color: #ECECEC;
+	
+    --primary-font:'Nanum Gothic', sans-serif;
+    --second-font: 'Signika Negative', sans-serif;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 4px 5px 19px rgb(149, 150, 150);
+    transition-duration: 0.5s;
+  
+}
+.btn:hover{
+    scale: 1.02;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+}
+.btn-primary:hover{
+    background-color: var(--second-color);
+}
+.btn-second{
+    background-color: var(--second-color);
+}
+.btn-second:hover{
+    background-color: var(--primary-color);
+   
+}
+h1,h2, h3, p{
+    font-weight: lighter;
+}
+h1{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+    color: rgb(84, 84, 87);
+}
+.h-min100{
+    min-height: 100vh;
+}
+.w-32{
+    width: 32%;
+}
+.w-22{
+    width: 22%;
+}
+img{
+    object-fit: cover;
+}
+li>a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+/*---------Nav---------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white;
+}
+nav img{
+    height: 50px;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+
+}
+ul{
+    list-style-type: none;
+}
+nav li{
+    text-transform: uppercase;
+    margin-right: 3rem ;
+}
+.flex-col-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bar{
+    display: block;
+    width: 34px;
+    height: 1.5px;
+    margin: 9px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--second-color);
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+/*------------Intro---------------------*/
+
+#intro{
+    background-color: #ECECEC;
+    width: 85%;
+    gap: 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 2rem;
+    
+    text-align: center;
+}
+#intro h1{
+    color: var(--third-color);
+    font-style: italic;
+    font-weight: lighter;
+    
+    margin-bottom: 2rem;
+}
+#intro p{
+    width: 70%;
+}
+.logo_intro{
+    height: 5rem;
+}
+.intro_images{
+    display: flex;
+    gap: 3rem;
+    margin: 1rem 3rem;
+    justify-content: center;
+}
+.intro_images img{
+    border-radius: 0.5rem;
+}
+/*----------Services---------------*/
+section{
+    padding-top: 7rem;
+}
+#services{
+    gap: 5rem; 
+    color: gray;
+    padding-bottom: 3rem;
+    
+}
+#services h2{
+    color: var(--primary-color);
+}
+.services_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+.services_item{
+    width: 260px;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--fourth-color);   
+}
+
+.services_item img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+.price-call{
+    background-color: var(--fourth-color);
+    width: 80%;
+    padding: 2rem;
+   
+}
+.price-call p{
+    margin-bottom: 3rem;
+    
+}
+/*-------------------rooms---------------------------------*/
+
+#rooms{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 7rem 1rem 3rem 1rem;
+    gap: 3rem;
+    text-align: center;
+    width: 90%;
+    margin: 3rem auto;
+}
+#rooms p{
+    color: rgb(62 53 60);
+}
+.rooms-container{
+    display: flex;
+    justify-content: space-around;  
+}
+.rooms-container img{
+    width: 20%;
+}
+
+.room_service{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+   width: 70%;
+}
+.room_service > div{
+  gap: 1rem;
+   width: 20%;
+   text-align: center;
+}
+.icon-service{
+    height: 4em;
+}
+/*---------------Travel-------------------*/
+#travel-ideas{
+    text-align: center;
+    gap: 4rem;
+    padding: 3rem;
+}
+.travel-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;  
+}
+.travel-container>div:hover{
+    scale: 1.03;
+    background-color: #ececec62;
+    box-shadow: 4px 5px 10px rgb(183, 181, 181);
+    border-radius: 9px;
+}
+.travel-container>div{
+    gap: 1.5rem;
+    padding: 1rem;
+    
+}
+.travel-container img{
+    height: 200px;
+    width: 300px;
+}
+footer{
+    text-align: center;
+    background-color: var(--fourth-color);
+    padding: 2rem;
+}
+footer p{
+    color: gray;
+    font-size: 0.7rem;
+}
+@media screen and (max-width:  1200px) {
+    .hamburguer{
+        display: block;
+		margin-right: 20px;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(10.9px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-10.9px) rotate(-45deg);
+    }
+    .menu{
+        position: fixed;
+        left: -110%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--second-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+		padding: 0;
+    }
+    .menu li{
+		width: 100%;
+		padding: 20px 0px;
+		margin: 0;
+    }
+	.menu>li>a{
+		color: white;
+	}
+	.menu li:hover{
+		background-color: var(--primary-color);
+	}
+
+    .menu.active{
+    left: 0;
+    }	
+}
+@media screen and (max-width:  550px) {
+    body{
+        font-size: 0.6rem;
+    }
+    h1, h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    #intro{
+        padding: 3rem 1rem;
+    }
+    .room_service, #intro p{
+        width: 95%;
+    }  
+    .intro_images{
+        margin: 0;
+       
+        gap: 1rem;
+    }
+    .icon-service{
+        height: 2rem;
+    }
+}
