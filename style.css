@@ -147,6 +147,7 @@ nav li{
 }
 .intro_images img{
     border-radius: 0.5rem;
+    height: auto;
 }
 /*----------Services---------------*/
 section{
@@ -213,6 +214,7 @@ section{
 }
 .rooms-container img{
     width: 20%;
+    height: auto;
 }
 
 .room_service{
