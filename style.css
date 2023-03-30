@@ -49,6 +49,10 @@ h1,h2, h3, p{
 h1{
     font-size: 1.5rem;
 }
+h2{
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
 p{
     font-size: 1.2rem;
     color: rgb(84, 84, 87);
@@ -101,6 +105,7 @@ nav li{
     align-items: center;
     flex-direction: column;
 }
+
 .bar{
     display: block;
     width: 34px;
@@ -147,7 +152,7 @@ nav li{
 }
 .intro_images img{
     border-radius: 0.5rem;
-    height: auto;
+    height: 23rem;
 }
 /*----------Services---------------*/
 section{
@@ -199,11 +204,14 @@ section{
 #rooms{
     color: white;
     background-color: var(--primary-color);
-    padding: 7rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 3rem 1rem;
     gap: 3rem;
     text-align: center;
     width: 90%;
-    margin: 3rem auto;
+    margin: 0rem auto;
+}
+#rooms h2{
+    color: white;
 }
 #rooms p{
     color: rgb(62 53 60);
@@ -214,13 +222,13 @@ section{
 }
 .rooms-container img{
     width: 20%;
-    height: auto;
+    height: 20rem;
 }
 
 .room_service{
     display: flex;
     justify-content: space-around;
-    padding: 5rem 0;
+    padding: 2rem 0;
    width: 70%;
 }
 .room_service > div{
@@ -327,10 +335,15 @@ footer p{
     }  
     .intro_images{
         margin: 0;
-       
         gap: 1rem;
+    }
+    .intro_images img {
+        height: 8rem;
     }
     .icon-service{
         height: 2rem;
+    }
+    .rooms-container img {
+        height: 7rem;
     }
 }
