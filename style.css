@@ -15,6 +15,7 @@
 	
     --primary-font:'Nanum Gothic', sans-serif;
     --second-font: 'Signika Negative', sans-serif;
+    --box-shadow:-2px -1px 32px rgb(191, 186, 186); 
 }
 
 .btn{
@@ -73,6 +74,8 @@ li>a{
     text-decoration: none;
     color: var(--second-color);
 }
+
+
 /*---------Nav---------------*/
 nav{
     display: flex;
@@ -83,6 +86,7 @@ nav{
     width: 100%;
     padding: 0.5rem;
     background-color: white;
+    z-index: 5;
 }
 nav img{
     height: 50px;
@@ -119,6 +123,9 @@ nav li{
     display: none;
     cursor: pointer;
 }
+.services_item,#intro, #rooms{
+    box-shadow: var(--box-shadow);
+}
 /*------------Intro---------------------*/
 
 #intro{
@@ -153,6 +160,10 @@ nav li{
 .intro_images img{
     border-radius: 0.5rem;
     height: 23rem;
+    transition: 2s;
+}
+.intro_images img:hover, .services_item:hover{
+    scale: 1.05;
 }
 /*----------Services---------------*/
 section{
@@ -180,7 +191,8 @@ section{
     border-radius: 10px;
     text-align: center;
     color: var(--primary-color);
-    background-color: var(--fourth-color);   
+    background-color: var(--fourth-color);  
+    transition: all 2s ease-in-out; 
 }
 
 .services_item img{
