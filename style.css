@@ -127,7 +127,19 @@ nav li{
     box-shadow: var(--box-shadow);
 }
 /*------------Intro---------------------*/
-
+.face-logo{
+    width: 30px;
+    height: 30px;
+    top: 80px;
+    right: 0;
+    position: fixed;
+    border-radius: 5px;
+}
+.face-logo:hover{
+    padding-left: 60px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
 #intro{
     background-color: #ECECEC;
     width: 85%;
