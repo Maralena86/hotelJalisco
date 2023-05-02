@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Hotel Jalisco: </title>
 </head>
@@ -20,7 +22,7 @@
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#rooms-container">Habitaciones</a></li>
                 <li><a href="#travel-ideas">Qué hacer?</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="hamburguer">
@@ -29,7 +31,17 @@
             <span class="bar"></span>
         </div>
     </nav>
-    <div><a href="https://www.facebook.com/hoteljaliscoarm"><img src="images/facebook.png" alt="icon facebook" class="face-logo"></a></div>
+    <div>
+        <a href="https://www.facebook.com/hoteljaliscoarm">
+            <img src="images/facebook.png" alt="icon facebook" class="face-logo">
+        </a>
+    </div>
+    <div class="">
+    <div>
+        <a href="tel:+576068522931">
+            <img src="images/whatsApp.png" alt="icon facebook" class="whatsApp-logo">
+        </a>
+    </div>
     <section class="">
         <div id="intro" class="flex-col-center">
         <img class="logo_intro" src="images/logo_withoutfond.png" alt="logo hotel">
@@ -59,9 +71,33 @@
                 <p>Habitaciones espaciosas y limpias</p>
             </div>
         </div>
-        <div class="price-call flex-col-center">
-                <p>Y ademas precios muy accequibles</p>
-                <a href="" class="btn btn-second">pedir tarifas</a>
+        <div class="price-call flex-col-center" id="contacto">
+                <p>Tenemos los mejores precios de Armenia!</p>
+                <p id="price">Desde $35.000</p>
+                
+                <div class="container-logo-contact">
+                    <p class="contacto">Contactanos!</p>
+                    <div >
+                        <a href="tel:+576068522931" class="d-flex">
+                            <img src="images/whatsApp.png" alt="icon facebook" class="logo-contact">
+                            <p>+576068522931</p>
+                        </a>
+                    </div>
+                    <div >
+                    <a href="https://www.facebook.com/hoteljaliscoarm" class="d-flex">
+                        <img src="images/facebook.png" alt="icon facebook" class="logo-contact">
+                        <p>https://www.facebook.com/hoteljaliscoarm</p>
+                    </a>
+                </div>
+                    <div>
+                        <a href="mailto:hoteljaliscoarm@gmail.com" class="d-flex">
+                            <img src="images/mail.png" class="logo-contact" alt="mail logo">
+                            <p>Email: hoteljaliscoarm@gmail.com</p>
+                        </a>
+                    </div>
+                
+
+                </div>
         </div>
     </section>
     <section id="rooms-container">
@@ -91,7 +127,7 @@
                 
             </div>
         </div>
-    </section>
+    </div>
     <section id ="travel-ideas" class="flex-col-center">
         <h2>Sitios para conocer</h2>
         <p>Tenemos varias recomendaciones para darte, la región esta llena de lugares maravillosos para conocer</p>
